@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DeAuth Commander v3.4</title>
+<style>
+:root{
+  --bg:#050505;--card:#0e0e0e;--bd:#1a1a1a;
+  --r:#ff1a1a;--g:#00e676;--y:#ffab00;--b:#2979ff;--p:#d500f9;--c:#00bcd4;
+  --tx:#f5f5f5;--mu:#555;
+  --fnt:'SF Mono','Cascadia Code','Courier New',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:var(--fnt);padding:12px;max-width:480px;margin:auto}
+.hd{color:var(--r);font-size:1.05rem;letter-spacing:.18em;margin-bottom:2px;text-shadow:0 0 12px rgba(255,26,26,.4)}
+.sub{font-size:.58rem;color:var(--mu);letter-spacing:.12em;margin-bottom:14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:13px;margin-bottom:11px}
+.lbl{font-size:.58rem;color:var(--mu);text-transform:uppercase;letter-spacing:.16em;margin-bottom:5px}
+.val{font-size:.78rem;word-break:break-all}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.idle{background:var(--mu)}
+.atk{background:var(--r);box-shadow:0 0 10px var(--r);animation:p 1s infinite}
+.brutal{background:var(--y);box-shadow:0 0 14px var(--y);animation:p .4s infinite}
+.ultra{background:var(--p);box-shadow:0 0 16px var(--p);animation:p .25s infinite}
+@keyframes p{0%,100%{opacity:1}50%{opacity:.25}}
+.row{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
+button{flex:1;min-width:90px;padding:11px 5px;border:none;border-radius:6px;
+  font-family:var(--fnt);font-size:.68rem;font-weight:700;letter-spacing:.06em;
+  cursor:pointer;transition:opacity .08s,transform .08s}
+button:active{transform:scale(.95);opacity:.75}
